@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="indian.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7721e37811.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        text-transform: capitalize;
+        font-family: "Nunito", sans-serif;
+        transition: all 0.2s ease-out;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      nav {
+        background-color: #ff9216;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        position: relative;
+      }
+
+      label.logo {
+        color: #f7fff6;
+        font-size: 35px;
+        font-family: "Borel", cursive;
+        line-height: 93px;
+        padding: 0 60px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        float: right;
+        margin-right: 20px;
+      }
+
+      nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+      .active {
+        color: #f7fff6;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 7px 13px;
+        border-radius: 4px;
+      }
+
+      .aa {
+        color: #f7fff6;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 7px 13px;
+        border-radius: 4px;
+      }
+      .aa:hover,
+      .active:hover {
+        background: #dc7b0d;
+        transition: 0.5s;
+      }
+      .dropdown button {
+        background-color: #dc7b0d;
+        transition: 0.5s;
+      }
+      .aab {
+        color: #dc7b0d;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 7px 13px;
+        border-radius: 4px;
+        background-color: #f7fff6;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease-out;
+      }
+      .aab:hover {
+        background: #b6c454;
+        transition: 0.5s;
+        color: #f7fff6;
+      }
+
+      .dropbtn {
+        background-color: #ff9216;
+        color: white;
+        padding: 7px 13px;
+        font-size: 17px;
+        border: none;
+        border-radius: 4px;
+        font-family: "Nunito", sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(248, 248, 248, 0.7);
+        min-width: 130px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: center;
+        padding: 0%;
+      }
+
+      .dropdown-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        font-family: "Nunito", sans-serif;
+      }
+
+      .dropdown-content a:hover {
+        color: #ff9216;
+        transition: 0.5s;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background: #dc7b0d;
+        transition: 0.5s;
+      }
+      /********************TopSection********************/
+      .TopSection {
+        background-color: bisque;
+        height: 1000px;
+        overflow: auto;
+      }
+      .discount {
+        text-align: center;
+        border: 1px solid black;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-------------------------Navbar--------------------------------------->
+    <nav>
+      <label class="logo">SysteMM</label>
+      <ul>
+        <li><a class="active" href="Home.html">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Cuisine</button>
+            <div class="dropdown-content">
+              <a href="#">indian</a>
+              <a href="#">chinese</a>
+              <a href="#">italian</a>
+              <a href="#">american</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#" class="aa">About</a></li>
+        <li><a href="#" class="aa">Services</a></li>
+        <li><a href="#" class="aab">Login</a></li>
+      </ul>
+    </nav>
+    <!-------------------------TopSection----------------------------------->
+    <div class="TopSection">
+      <div class="discount">
+        <h2>get upto 60% off on your first order</h2>
+        <p>using code #FirstTime</p>
+        <p>T&C applied*</p>
+      </div>
+    </div>
+  </body>
+</html>
