@@ -16,6 +16,7 @@ void printSubsequence(string input, string output, int i)
     }
 
     // exclude
+    cout << "inp-> " << input << "out--> " << output << endl;
     printSubsequence(input, output, i + 1);
 
     // include
